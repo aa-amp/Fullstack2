@@ -1,6 +1,91 @@
 body {
-    background-color: bisque;
+    background-color: #F7F7F7;
+    font-family: 'Montserrat', sans-serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
 }
-.titulo{
-    color: blueviolet;
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+}
+.descripcion {
+  color: #666666;
+}
+header {
+  text-align: center;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.producto-card {
+  position: relative;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+/*carrusel */
+
+.carrusel {
+  position: relative;
+  overflow: hidden;
+  width: 400px; /* ancho visible del carrusel */
+  margin: auto;
+}
+
+.carrusel-track {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.producto-card {
+  flex: 0 0 400px; /* cada card ocupa 400px exactos */
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.producto-card img {
+  width: 100%;  /* imagen siempre del ancho de la card */
+  height: auto;
+}
+
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carrusel-btn.prev {
+  left: 10px;
+}
+
+.carrusel-btn.next {
+  right: 10px;
 }
