@@ -4,7 +4,7 @@ const btnNext = document.querySelector('.carrusel-btn.next');
 const cards = document.querySelectorAll('.producto-card');
 
 let index = 0;
-const cardWidth = 400; // igual que en CSS
+const cardWidth = 400;
 
 function updateCarousel() {
   track.style.transform = `translateX(-${index * cardWidth}px)`;
