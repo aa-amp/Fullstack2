@@ -68,7 +68,7 @@ footer {
 }
 
 .productos-grid .producto-card {
-  flex: 0 0 250px;        
+  flex: 1 1 250px;        
   border: 1px solid #ddd;
   padding: 10px;
   text-align: center;
@@ -82,8 +82,28 @@ footer {
   display: block;
 }
 
-
-
+.registro-login{
+  display: flex;
+  gap: 10px;                  
+  justify-content: flex-end;  
+  padding: 10px 50px;
+}
+.boton-reging{
+  display: inline-block;
+  padding: 10px 20px;  
+  border: 2px solid #333;                
+  background-color: rgba(255,255,255,0); 
+  color: #333 ;                            
+  text-decoration: none;                 
+  border-radius: 5px;                    
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+.boton-reging:hover {
+  background-color: rgba(51, 51, 51, 0.1); 
+  color: #000 ;
+}
 /*carrusel */
 
 .carrusel {
@@ -99,7 +119,7 @@ footer {
 }
 
 .carrusel .producto-card {
-  flex: 0 0 300px; 
+  flex: 1 1 300px; 
   margin-right: 10px;
   text-align: center;
   padding: 10px;
@@ -131,4 +151,20 @@ footer {
 
 .carrusel-btn.next {
   right: 10px;
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 30px 10px;
+    font-size: 1.5rem;
+  }
+  nav ul {
+    flex-direction: column; 
+    gap: 5px;
+  }
+  .registro-login {
+    flex-direction: column; 
+    gap: 5px;
+    justify-content: center;
+  }
 }
