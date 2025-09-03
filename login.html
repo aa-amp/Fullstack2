@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Usuario</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="Imagenes/logobazar.jpg" alt="Bazar del barrio" class="logo">
+    <h1>Bazar del barrio</h1>
+    <a href="carrito.html" class="carrito">
+      <img src="Imagenes/logocarrito.png" alt="Carrito de compras" class="carrito-logo">
+    </a>
+  </header>
+
+<div class="login-container">
+  <h1>Ingreso de Usuario</h1>
+  <form method="POST" action="index.html" target="central">
+    <input type="text" id="nombre" placeholder="Usuario" />
+    <input type="password" name="password" id="clave" placeholder="Clave" />
+    <input type="submit" onclick="cifrar()" value="Ingresar" />
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Bazar del barrio</p>
+  </footer>
+</div>
+
+<script type="text/javascript" src="sha1.js"></script>
+<script>
+  function cifrar(){
+    var input_pass = document.getElementById("clave");
+    input_pass.value = SHA1(input_pass.value);
+  }
+</script>
+
+
+</body>
+</html>
