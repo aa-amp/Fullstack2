@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>Registro</title>
     <link rel="icon" href="Imagenes/logobazar.png">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header style="display:flex; align-items:center; justify-content:space-between; padding:10px;">
+    <header style="display:flex; align-items:center; justify-content:space-between; padding:10px;">
         <a href="index.html" style="text-decoration:none; color:inherit; gap:10px;">
         <img src= "Imagenes/logobazar.png" alt="Bazar del barrio" class="logo" >
          <h1 style="margin:0; flex:1; text-align:center;"">
@@ -30,18 +29,39 @@
         </ul>
     </nav>
 
-    <div class="ingreso">
-        <a href="login.html" class="boton-reging">Ingreso Cuenta</a>
-        <a href="registro.html" class="boton-reging">Registrarse</a>
-    </div>
+     <h2>Formulario de Registro</h2>
+  
+<div class="registro-wrapper">
+<div class="form-container">
+  <form id="registroForm">
+    <h2>Formulario de Registro</h2>
 
-  <h1>Contactanos!</h1>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet lacus aliquet, dapibus nibh auctor, posuere tellus. Maecenas id condimentum est. Duis vel ligula tincidunt, mollis eros quis, sagittis est. Vestibulum pharetra pretium congue. Vivamus ac ante posuere, vehicula orci sed, ornare lectus. Nulla vel arcu scelerisque, volutpat justo a, volutpat metus. Praesent ac tellus interdum lacus interdum pulvinar quis semper ipsum.
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Carlos" required>
 
-Sed posuere nibh lorem, quis feugiat ex tristique eu. Vestibulum in nunc dolor.</p>
+    <label for="apellido">Apellido:</label>
+    <input type="text" id="apellido" name="apellido" placeholder="Abarzua"  required>
 
-  <a href="index.html" class="boton-reging">Volver a Inicio</a>
+    <label for="correo">Correo electronico:</label>
+    <input type="email" id="correo" name="correo" placeholder="usuario@duocuc.cl" required>
+    <p id="correoError" style="color:red; display:none;">El correo debe terminar en @duocuc.cl</p>
 
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" minlength="6" placeholder="Contraseña" required>
+
+    <label for="rut">RUT:</label>
+    <input type="text" id="rut" name="rut" placeholder="12345678-9" required>
+    <p id="rutError" style="color:red; display:none;">Formato de RUT inválido</p>
+
+    <p id="errorGeneral" style="color:red; display:none;"></p>
+
+    <button type="submit">Registrarse</button>
+    <p style="text-align: center; margin-top: 15px;">
+    <a href="login.html" class="texto-link">Ingresar a mi cuenta</a>
+    </p>
+  </form>
+  </div>
+  </div>
   <footer>
       <h2>Nosotros</h2>
       <p>Bazar del barrio es un negocio local. Fue fundado en 2025 y esperamos estar muchos años acompañandolos .</p>
@@ -58,8 +78,8 @@ Sed posuere nibh lorem, quis feugiat ex tristique eu. Vestibulum in nunc dolor.<
           <img src="Imagenes/xlogo.png" alt="xlogo" class="footer-logo">
         </a>
       </div>
-      <p> © 2025 Bazar del barrio</p>
+      <p>© 2025 Bazar del barrio</p>
   </footer>
-
-</body>
-</html>
+  <script src="registro.js"></script>
+  </body>
+  </html>

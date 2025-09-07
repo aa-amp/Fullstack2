@@ -211,7 +211,7 @@ footer {
     border-color: #333;
   }
 
-  .login-container input[type="submit"] {
+  .login-container input[type="button"] {
     padding: 12px;
     border: none;
     border-radius: 6px;
@@ -223,7 +223,7 @@ footer {
     transition: background-color 0.3s;
   }
 
-  .login-container input[type="submit"]:hover {
+  .login-container input[type="button"]:hover {
     background-color: #555;
   }
 
@@ -287,4 +287,90 @@ footer {
     .footer-logo {
         width: 30px; 
     }
+}
+
+/* Contenedor del formulario de registro */
+.registro-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px 0; /* o usa padding según necesites */
+}
+
+.form-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  color: #333;
+}
+
+.form-container label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+.form-container input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 6px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.form-container button:hover {
+  background-color: #555;
+}
+.texto-link {
+  color: #666;
+  text-decoration: underline;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.texto-link:hover {
+  color: #333;
+}
+
+/*boton comprar*/
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1000;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }

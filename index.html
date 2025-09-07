@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bazar del barrio</title>
+    <link rel="icon" href="Imagenes/logobazar.png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -11,7 +12,7 @@
     
     <header style="display:flex; align-items:center; justify-content:space-between; padding:10px;">
         <a href="index.html" style="text-decoration:none; color:inherit; gap:10px;">
-        <img src= "Imagenes/logobazar.jpg" alt="Bazar del barrio" class="logo" >
+        <img src= "Imagenes/logobazar.png" alt="Bazar del barrio" class="logo" >
          <h1 style="margin:0; flex:1; text-align:center;"">
             <a href="index.html" style="text-decoration:none; color:inherit;">
             Bazar del barrio</h1>
@@ -26,12 +27,13 @@
             <li><a href="productos.html">Productos</a></li>
             <li><a href="nosotros.html">Nosotros</a></li>
             <li> <a href="contacto.html">Contacto</a></li>
-            <li><a href="ayuda.html">Ayuda</a></li>
+            <li><a href="ayuda.html">Ayuda y preguntas frecuentes</a></li>
         </ul>
     </nav>
 
     <div class="ingreso">
         <a href="login.html" class="boton-reging">Ingreso Cuenta</a>
+        <a href="registro.html" class="boton-reging">Registrarse</a>
     </div>
 <main>
     <section class="destacados">
@@ -43,7 +45,7 @@
       <h3>Coca cola 1L</h3>
       <p class="descripcion">Coca cola de 1L en su versión en botella de vidrio.</p>
       <p class="precio">$1.000</p>
-      <button>Comprar</button>
+      <button class="btn-comprar">Comprar</button>
     </div>
 
     <div class="producto-card">
@@ -51,7 +53,7 @@
         <h3>Lays medianas</h3>
         <p class="descripcion">Papas fritas Lays en formato de 140 gramos.</p>
         <p class="precio">$1.300</p>
-        <button>Comprar</button>
+        <button class="btn-comprar">Comprar</button>
     </div>
 
     <div class="producto-card">
@@ -59,9 +61,16 @@
         <h3>Chocman</h3>
         <p class="descripcion">Chocman en su version de 33 gramos.</p>
         <p class="precio">$400</p>
-        <button>Comprar</button>
+        <button class="btn-comprar">Comprar</button>
+     </div>
 
-        #AGREGAR EL RESTO DE PRODUCTOS, UNOS 6 MAS *
+     <div class="producto-card">
+        <img src="Imagenes/golpe.jpg" >
+        <h3>golpe</h3>
+        <p class="descripcion">Golpe en su version de 27 gramos.</p>
+        <p class="precio">$500</p>
+        <button class="btn-comprar">Comprar</button>
+        </div>
         
     </div>
     </div>
@@ -78,21 +87,21 @@
         <h3>Finis Tubos</h3>
         <p class="descripcion">Tubos Finis sabor frutilla ácida, 80 gramos.</p>
         <p class="precio">$1200</p>
-        <button>Comprar</button>
+        <button class="btn-comprar">Comprar</button>
         </div>
      <div class="producto-card">
         <img src="Imagenes/lechecolun.jpg" width="400">
         <h3>Leche Colun Entera 1L</h3>
         <p class="descripcion">Leche colun entera 1 L.</p>
         <p class="precio">$1350</p>
-        <button>Comprar</button>
+        <button class="btn-comprar">Comprar</button>
         </div>
         <div class="producto-card">
         <img src="Imagenes/lechecolun2.jpg" width="400">
         <h3>Leche Colun Descremada Sin Lactosa 1L</h3>
         <p class="descripcion">Leche colun descremada sin lactosa 1L.</p>
         <p class="precio">$1300</p>
-        <button>Comprar</button>
+        <button class="btn-comprar">Comprar</button>
         </div>
      </div>
 </section>
@@ -118,6 +127,6 @@
     </footer>
  
  <script src="script.js"></script>
-
+ <script src="botoncomprar.js"></script>
 </body>
 </html>
