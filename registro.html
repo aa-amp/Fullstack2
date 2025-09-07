@@ -28,12 +28,10 @@
             <li><a href="ayuda.html">Ayuda y preguntas frecuentes</a></li>
         </ul>
     </nav>
-
-     <h2>Formulario de Registro</h2>
   
 <div class="registro-wrapper">
 <div class="form-container">
-  <form id="registroForm">
+  <form id="registroForm" method="POST" action="registro.html" target="central">
     <h2>Formulario de Registro</h2>
 
     <label for="nombre">Nombre:</label>
@@ -50,7 +48,7 @@
     <input type="password" id="password" name="password" minlength="6" placeholder="Contraseña" required>
 
     <label for="rut">RUT:</label>
-    <input type="text" id="rut" name="rut" placeholder="12345678-9" required>
+    <input type="text" id="rut" name="rut" placeholder="Ej:12.345.678-9" required>
     <p id="rutError" style="color:red; display:none;">Formato de RUT inválido</p>
 
     <p id="errorGeneral" style="color:red; display:none;"></p>
