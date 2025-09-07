@@ -1,23 +1,40 @@
 const track = document.querySelector('.carrusel-track');
 const btnPrev = document.querySelector('.carrusel-btn.prev');
 const btnNext = document.querySelector('.carrusel-btn.next');
-const cards = document.querySelectorAll('.producto-card');
 
 let index = 0;
-const cardWidth = 400;
+
+function getCardWidth() {
+  const card = document.querySelector('.producto-card');
+  if (!card) return 300;
+  const style = getComputedStyle(card);
+  return card.offsetWidth + (parseInt(style.marginRight) || 0);
+}
+
+function getMaxTranslate() {
+  return Math.max(track.scrollWidth - document.querySelector('.carrusel').offsetWidth, 0);
+}
 
 function updateCarousel() {
-  track.style.transform = `translateX(-${index * cardWidth}px)`;
+  const translate = index * getCardWidth();
+  track.style.transform = `translateX(-${Math.min(translate, getMaxTranslate())}px)`;
 }
 
 btnNext.addEventListener('click', () => {
   index++;
-  if (index >= cards.length) index = 0;
+  if (index * getCardWidth() > getMaxTranslate()) index = 0;
   updateCarousel();
 });
 
 btnPrev.addEventListener('click', () => {
   index--;
-  if (index < 0) index = cards.length - 1;
+  if (index < 0) index = Math.floor(getMaxTranslate() / getCardWidth());
+  updateCarousel();
+});
+
+window.addEventListener('resize', () => {
+  if (index * getCardWidth() > getMaxTranslate()) {
+    index = Math.floor(getMaxTranslate() / getCardWidth());
+  }
   updateCarousel();
 });

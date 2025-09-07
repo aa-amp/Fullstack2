@@ -12,10 +12,11 @@
   <header style="display:flex; align-items:center; justify-content:space-between; padding:10px;">
         <a href="index.html" style="text-decoration:none; color:inherit; gap:10px;">
         <img src= "Imagenes/logobazar.png" alt="Bazar del barrio" class="logo" >
-         <h1 style="margin:0; flex:1; text-align:center;"">
+         <h1 style="margin:0; flex:1; text-align:center;">
             <a href="index.html" style="text-decoration:none; color:inherit;">
-            Bazar del barrio</h1>
-        </a>
+            Bazar del barrio</a>
+          </h1>
+        
         <a href="carrito.html" class="carrito">
             <img src="Imagenes/logocarrito.png" alt="Carrito de compras" class="carrito-logo">
         </a>
@@ -36,9 +37,10 @@
     <input type="text" id="nombre" placeholder="Usuario" />
     <input type="password" name="password" id="clave" placeholder="Clave" />
     <p id="errorLogin" style="color:red; display:none;"></p>
-    <input type="button" id="loginBtn" value="Ingresar" />
+    <input type="submit" id="loginBtn" value="Ingresar" />
     <p style="text-align: center; margin-top: 15px;">
     <a href="registro.html" class="texto-link">Registrarme y crear mi cuenta.</a>
+    </p>
   </form>
  </div>
 
@@ -62,13 +64,6 @@
   </footer>
 
 <script type="text/javascript" src="sha1.js"></script>
-<script>
-  function cifrar(){
-    var input_pass = document.getElementById("clave");
-    input_pass.value = SHA1(input_pass.value);
-  }
-</script>
-
-<script src="login.html"></script>
+<script src="login.js"></script>
 </body>
 </html>

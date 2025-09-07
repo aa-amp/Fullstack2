@@ -5,12 +5,16 @@ document.addEventListener("DOMContentLoaded", function() {
     return regex.test(correo);
   }
 
-  const boton = document.getElementById("loginBtn");
+  const loginForm = document.getElementById("loginForm");
   const errorLogin = document.getElementById("errorLogin");
 
-  boton.addEventListener("click", function() {
+  loginForm.addEventListener("submit", function(e) {
+    e.preventDefault();
+
     const correo = document.getElementById("nombre").value.trim();
-    const clave = document.getElementById("clave").value.trim();
+    const claveInput = document.getElementById("clave");
+    const clave = claveInput.value.trim();
+
     let errores = [];
 
     if (!validarCorreo(correo)) errores.push("Correo inválido. Debe ser usuario@duocuc.cl.");
@@ -21,8 +25,10 @@ document.addEventListener("DOMContentLoaded", function() {
       errorLogin.style.display = "block";
     } else {
       errorLogin.style.display = "none";
-      cifrar(); 
-      window.location.href = "micuenta.html"; 
+
+      claveInput.value = SHA1(clave);
+
+      window.location.href = "micuenta.html";
     }
   });
 
