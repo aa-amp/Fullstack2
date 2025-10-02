@@ -22,13 +22,13 @@ function updateCarousel() {
 
 btnNext.addEventListener('click', () => {
   index++;
-  if (index * getCardWidth() > getMaxTranslate()) index = 0;
+  if (index * getCardWidth() > getMaxTranslate() + getCardWidth()) index = 0;
   updateCarousel();
 });
 
 btnPrev.addEventListener('click', () => {
   index--;
-  if (index < 0) index = Math.floor(getMaxTranslate() / getCardWidth());
+  if (index < 0) index = track.children.length -1;
   updateCarousel();
 });
 

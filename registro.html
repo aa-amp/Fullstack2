@@ -9,26 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="display:flex; align-items:center; justify-content:space-between; padding:10px;">
-        <a href="index.html" style="text-decoration:none; color:inherit; gap:10px;">
-        <img src= "Imagenes/logobazar.png" alt="Bazar del barrio" class="logo" >
-         <h1 style="margin:0; flex:1; text-align:center;"">
-            <a href="index.html" style="text-decoration:none; color:inherit;">
-            Bazar del barrio</h1>
-        </a>
-        <a href="carrito.html" class="carrito">
-            <img src="Imagenes/logocarrito.png" alt="Carrito de compras" class="carrito-logo">
-        </a>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
-            <li><a href="ayuda.html">Ayuda y preguntas frecuentes</a></li>
-        </ul>
-    </nav>
+<div id="header"></div>
+<main>
   
 <div class="registro-wrapper">
 <div class="form-container">
@@ -49,7 +31,7 @@
     <input type="password" id="password" name="password" minlength="6" placeholder="Contraseña" required>
 
     <label for="rut">RUT:</label>
-    <input type="text" id="rut" name="rut" placeholder="Ej:12.345.678-9" required>
+    <input type="text" id="rut" name="rut" placeholder="12.345.678-9" required>
     <p id="rutError" style="color:red; display:none;">Formato de RUT inválido</p>
 
     <p id="errorGeneral" style="color:red; display:none;"></p>
@@ -61,24 +43,11 @@
   </form>
   </div>
   </div>
-  <footer>
-      <h2>Nosotros</h2>
-      <p>Bazar del barrio es un negocio local. Fue fundado en 2025 y esperamos estar muchos años acompañandolos .</p>
-      <p><li><a href="https://maps.app.goo.gl/gL2VXzZCm3mjNuFz5">Encuentranos: Manuel Montt 772, Providencia, Región Metropolitana</a></li></p>
-      <p>Contactanos: +56968928080</p>
-      <div class="footer-logos">
-        <a href="https://www.instagram.com" target=" _blank">
-          <img src="Imagenes/instagramlogo.png" alt="instagramlogo" class="footer-logo">
-        </a>
-        <a href="https://wwww.facebook.com" target="_blank">
-          <img src="Imagenes/facebooklogo.png" alt="facebooklogo" class="footer-logo">
-        </a>
-        <a href="https://www.x.com" target="_blank">
-          <img src="Imagenes/xlogo.png" alt="xlogo" class="footer-logo">
-        </a>
-      </div>
-      <p>© 2025 Bazar del barrio</p>
-  </footer>
+
+</main>
+<div id="footer"></div>
+
+<script src="include.js"></script>
   <script src="registro.js"></script>
   </body>
   </html>

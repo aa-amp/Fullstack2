@@ -9,171 +9,158 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header style="display:flex; align-items:center; justify-content:space-between; padding:10px;">
-        <a href="index.html" style="text-decoration:none; color:inherit; gap:10px;">
-        <img src= "Imagenes/logobazar.png" alt="Bazar del barrio" class="logo" >
-         <h1 style="margin:0; flex:1; text-align:center;"">
-            <a href="index.html" style="text-decoration:none; color:inherit;">
-            Bazar del barrio</h1>
-        </a>
-        <a href="carrito.html" class="carrito">
-            <img src="Imagenes/logocarrito.png" alt="Carrito de compras" class="carrito-logo">
-        </a>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="nosotros.html">Nosotros</a></li>
-            <li> <a href="contacto.html">Contacto</a></li>
-            <li><a href="ayuda.html">Ayuda y preguntas frecuentes</a></li>
-        </ul>
-    </nav>
-
-    <div class="ingreso">
-        <a href="login.html" class="boton-reging">Ingreso Cuenta</a>
-        <a href="registro.html" class="boton-reging">Registrarse</a>
-    </div>
-
-    <h1>Productos</h1>
+<div id="header"></div>
+<main>
+ <div class = "banda-negra">
+     <h1>Todos nuestros productos</h1>
+ </div>
     <section>
-     <h2>Todos nuestros productos</h2>
-     <div class="productos-grid">
-    <div class="producto-card">
-        <img src="Imagenes/finis.jpg" width="400">
-        <h3>Finis Tubos</h3>
-        <p class="descripcion">Tubos Finis sabor frutilla ácida, 80 gramos.</p>
-        <p class="precio">$1200</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
+
+        <div class="productos-grid">
+            <div class="producto-card">
+                <img src="Imagenes/finis.jpg" alt="Finis Tubos">
+                <div class="producto-card-content">
+                    <h3>Finis Tubos</h3>
+                    <p class="descripcion">Tubos Finis sabor frutilla ácida, 80 gramos.</p>
+                    <p class="precio">$1.200</p>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+            </div>
      <div class="producto-card">
-        <img src="Imagenes/lechecolun.jpg" width="400">
-        <h3>Leche Colun Entera 1L</h3>
-        <p class="descripcion">Leche colun entera 1 L.</p>
-        <p class="precio">$1350</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-        <div class="producto-card">
-        <img src="Imagenes/lechecolun2.jpg" width="400">
-        <h3>Leche Colun Descremada Sin Lactosa 1L</h3>
-        <p class="descripcion">Leche colun descremada sin lactosa 1L.</p>
-        <p class="precio">$1300</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-        <div class="producto-card">
-      <img src="Imagenes/coca.jpg" >
-      <h3>Coca cola 1L</h3>
-      <p class="descripcion">Coca cola de 1L en su versión en botella de vidrio.</p>
-      <p class="precio">$1.000</p>
-      <button class="btn-comprar">Comprar</button>
-    </div>
-
-    <div class="producto-card">
-        <img src="Imagenes/Lays.jpg" >
-        <h3>Lays medianas</h3>
-        <p class="descripcion">Papas fritas Lays en formato de 140 gramos.</p>
-        <p class="precio">$1.300</p>
-        <button class="btn-comprar">Comprar</button>
-    </div>
-
-    <div class="producto-card">
-        <img src="Imagenes/chocman.jpg" >
-        <h3>Chocman</h3>
-        <p class="descripcion">Chocman en su version de 33 gramos.</p>
-        <p class="precio">$400</p>
-        <button class="btn-comprar">Comprar</button>
-     </div>
-     <div class="producto-card">
-        <img src="Imagenes/golpe.jpg" >
-        <h3>Golpe</h3>
-        <p class="descripcion">Golpe en su version de 27 gramos.</p>
-        <p class="precio">$500</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-
-    <div class="producto-card">
-        <img src="Imagenes/galletabonobon.jpg" >
-        <h3>Galleta Bon o Bon</h3>
-        <p class="descripcion">Galleta Bon o Bon en su versión de 95 gramos.</p>
-        <p class="precio">$1200</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-
-    <div class="producto-card">
-        <img src="Imagenes/sprite.jpg" >
-        <h3>Sprite</h3>
-        <p class="descripcion">Sprite retornable de 2L.</p>
-        <p class="precio">$1550</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-        
-    <div class="producto-card">
-        <img src="Imagenes/chetos.jpg" >
-        <h3>Cheetos</h3>
-        <p class="descripcion">Cheetos en su version de 100 gramos.</p>
-        <p class="precio">$1100</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-
-    <div class="producto-card">
-        <img src="Imagenes/takis.jpg" >
-        <h3>Takis xplosion </h3>
-        <p class="descripcion">Takis xplosion en su version de 200 gramos.</p>
-        <p class="precio">$2100</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-
-    <div class="producto-card">
-        <img src="Imagenes/tabletabonobon.jpg" >
-        <h3>Barra Chocolate Galleta Bon o Bon</h3>
-        <p class="descripcion">Barra Chocolate Galleta Bon o Bon de 270 gramos.</p>
-        <p class="precio">$3900</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-
-    <div class="producto-card">
-        <img src="Imagenes/alfi.jpg" >
-        <h3>Alfi</h3>
-        <p class="descripcion">Alfajor Alfi en su versión de 45 gramos.</p>
-        <p class="precio">$600</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-
-      <div class="producto-card">
-        <img src="Imagenes/canutos.jpg" >
-        <h3>Riggati</h3>
-        <p class="descripcion">Fideos Lucchetti Rigati en su versión de 400 gramos.</p>
-        <p class="precio">$1100</p>
-        <button class="btn-comprar">Comprar</button>
-        </div>
-
-      <div class="producto-card">
-        <img src="Imagenes/mogulosos.jpg" >
-        <h3>Gomitas de Osos</h3>
-        <p class="descripcion">FGomitas de Osos Mogul en su versión de 90 gramos.</p>
-        <p class="precio">$1100</p>
-        <button class="btn-comprar">Comprar</button>
+         <img src="Imagenes/lechecolun.jpg" alt="Leche Colun">
+            <div class="producto-card-content">
+                <h3>Leche Colun Entera 1L</h3>
+                <p class="descripcion">Leche colun entera 1 L.</p>
+                <p class="precio">$1.350</p>
+                <button class="btn-comprar">Comprar</button>
         </div>
      </div>
-</section>
-<footer>
-      <h2>Nosotros</h2>
-      <p>Bazar del barrio es un negocio local. Fue fundado en 2025 y esperamos estar muchos años acompañandolos .</p>
-      <p><li><a href="https://maps.app.goo.gl/gL2VXzZCm3mjNuFz5">Encuentranos: Manuel Montt 772, Providencia, Región Metropolitana</a></li></p>
-      <p>Contactanos: +56968928080</p>
-      <div class="footer-logos">
-        <a href="https://www.instagram.com" target=" _blank">
-          <img src="Imagenes/instagramlogo.png" alt="instagramlogo" class="footer-logo">
-        </a>
-        <a href="https://wwww.facebook.com" target="_blank">
-          <img src="Imagenes/facebooklogo.png" alt="facebooklogo" class="footer-logo">
-        </a>
-        <a href="https://www.x.com" target="_blank">
-          <img src="Imagenes/xlogo.png" alt="xlogo" class="footer-logo">
-        </a>
+        <div class="producto-card">
+            <img src="Imagenes/lechecolun2.jpg" alt="Leche Colun Sin Lactosa">
+                <div class="producto-card-content">
+                    <h3>Leche Colun Descremada Sin Lactosa 1L</h3>
+                    <p class="descripcion">Leche colun descremada sin lactosa 1L.</p>
+                    <p class="precio">$1.300</p>
+                    <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+        <div class="producto-card">
+            <img src="Imagenes/coca.jpg" alt="Coca cola">
+                <div class="producto-card-content">
+                   <h3>Coca cola 1L</h3>
+                   <p class="descripcion">Coca cola de 1L en su versión en botella de vidrio.</p>
+                   <p class="precio">$1.000</p>
+                   <button class="btn-comprar">Comprar</button>
+                </div>
+        </div>
+    <div class="producto-card">
+        <img src="Imagenes/Lays.jpg" alt = "Lays" >
+            <div class="producto-card-content">
+                <h3>Lays medianas</h3>
+                <p class="descripcion">Papas fritas Lays en formato de 140 gramos.</p>
+                <p class="precio">$1.300</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    <div class="producto-card">
+        <img src="Imagenes/chocman.jpg" alt="Chocman" >
+            <div class="producto-card-content">
+                <h3>Chocman</h3>
+                <p class="descripcion">Chocman en su version de 33 gramos.</p>
+                <p class="precio">$400</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+     <div class="producto-card">
+        <img src="Imagenes/golpe.jpg" alt="Golpe" >
+            <div class="producto-card-content">
+                <h3>Golpe</h3>
+                <p class="descripcion">Golpe en su version de 27 gramos.</p>
+                <p class="precio">$500</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+
+    <div class="producto-card">
+        <img src="Imagenes/galletabonobon.jpg" alt = "Galletabonobon" >
+            <div class="producto-card-content">
+                <h3>Galleta Bon o Bon</h3>
+                <p class="descripcion">Galleta Bon o Bon en su versión de 95 gramos.</p>
+                <p class="precio">$1.200</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+
+    <div class="producto-card">
+        <img src="Imagenes/sprite.jpg" alt="Sprite" >
+            <div class="producto-card-content">
+                <h3>Sprite</h3>
+                <p class="descripcion">Sprite retornable de 2L.</p>
+                <p class="precio">$1.550</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    <div class="producto-card">
+        <img src="Imagenes/chetos.jpg" alt="Chetos" >
+            <div class="producto-card-content">
+                <h3>Cheetos</h3>
+                <p class="descripcion">Cheetos en su version de 100 gramos.</p>
+                <p class="precio">$1.100</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+    </div>
+    <div class="producto-card">
+        <img src="Imagenes/takis.jpg" alt="Takis" >
+            <div class="producto-card-content">
+                <h3>Takis xplosion </h3>
+                <p class="descripcion">Takis xplosion en su version de 200 gramos.</p>
+                <p class="precio">$2.100</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    <div class="producto-card">
+        <img src="Imagenes/tabletabonobon.jpg" alt="Tabletabonobon" >
+            <div class="producto-card-content">
+                <h3>Barra Chocolate Galleta Bon o Bon</h3>
+                <p class="descripcion">Barra Chocolate Galleta Bon o Bon de 270 gramos.</p>
+                <p class="precio">$3.900</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+    <div class="producto-card">
+        <img src="Imagenes/alfi.jpg" alt="Alfi" >
+            <div class="producto-card-content">
+                <h3>Alfi</h3>
+                <p class="descripcion">Alfajor Alfi en su versión de 45 gramos.</p>
+                <p class="precio">$600</p>
+                <button class="btn-comprar">Comprar</button>
+            </div>
+        </div>
+      <div class="producto-card">
+        <img src="Imagenes/canutos.jpg" alt = "Rigati" >
+          <div class="producto-card-content">
+            <h3>Riggati</h3>
+            <p class="descripcion">Fideos Lucchetti Rigati en su versión de 400 gramos.</p>
+            <p class="precio">$1.100</p>
+            <button class="btn-comprar">Comprar</button>
+          </div>
       </div>
-      <p> © 2025 Bazar del barrio</p>
-  </footer>
- <script src="botoncomprar.js"></script>
+
+      <div class="producto-card">
+        <img src="Imagenes/mogulosos.jpg" alt = "Mogulosos" >
+          <div class="producto-card-content">
+            <h3>Gomitas de Osos</h3>
+            <p class="descripcion">Gomitas de Osos Mogul en su versión de 90 gramos.</p>
+            <p class="precio">$1.100</p>
+            <button class="btn-comprar">Comprar</button>
+        </div>
+     </div>
+        </div>
+</section>
+</main>
+    <div id="footer"></div>
+
+<script src="include.js"></script>
+<script src="botoncomprar.js"></script>
 </body>
 </html>
